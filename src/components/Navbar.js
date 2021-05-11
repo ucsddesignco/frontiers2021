@@ -7,16 +7,16 @@ function Navbar() {
     <div className="navcontainer">
       <ul id="nav">
         <li>
-          <a href="#" className="navtext">Home</a>
+          <a href="#" className="navtext">Overview</a>
         </li>
         <li>
-          <a href="#" className="navtext">About</a>
+          <a href="#" className="navtext">Timeline</a>
         </li>
         <li>
-          <a href="#" className="navtext">FAQ</a>
+          <a href="#" className="navtext">Brief</a>
         </li>
         <li>
-          <a href="#" className="navtext">Contact</a>
+          <a href="#" className="navtext">Register</a>
         </li>
       </ul>
     </div>
