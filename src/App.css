@@ -1,3 +1,39 @@
+html {
+  cursor: url(assets/images/cursor.svg), auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/********* TIMELINE ********/
+.timeline-section {
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  border-bottom: 2px solid #141414;
+}
+
+.white-scrim {
+  color: #141414;
+  font-size: 3.5rem;
+  margin: 3.5rem 8vw;
+}
+
+.gr-circles {
+  width: auto;
+  height: 9rem;
+  margin-left: 8vw;
+  margin-bottom: 5rem;
+}
+
+.timeline-details {
+  height: 100%;
+  justify-content: center;
+  margin-right: 8vw;
+}
+
 /********* BRIEF ********/
 .brief-container {
   background-color: #141414;
@@ -24,10 +60,10 @@
 
 .brief-paragraph {
   font-size: 1.5rem;
-  color: #000;
+  color: #141414;
   position: absolute;
   top: 0;
-  margin: 120px 8vw 0 8vw;
+  margin: 7.5rem 8vw 0 8vw;
 }
 
 /********* Footer ********/
@@ -40,7 +76,7 @@
   border-width: 0 1px 1px 0;
 }
 
-.footer img {
+.signature img {
   display: inline-block;
   margin-left: 1rem;
 }
@@ -56,4 +92,40 @@
 
 .signature span {
   display: flex;
+}
+
+/********* TOGGLE ********/
+input[type="checkbox"] {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  -webkit-appearance: none;
+  background: #c6c6c6;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  cursor: url(assets/images/cursor.svg), auto;
+}
+
+input:checked[type="checkbox"] {
+  background: #03a9f4;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+input:checked[type="checkbox"]:before {
+  left: 40px;
 }

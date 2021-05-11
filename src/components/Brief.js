@@ -25,7 +25,7 @@ function Brief() {
         </Grid>
       </Grid>
 
-      <div className="footer gradient">
+      <div className="footer">
         <p className="signature">
           <span>
             Made with
