@@ -1,9 +1,12 @@
 import "./App.css";
+import Brief from "./components/Brief";
 
 function App() {
   return (
     <div>
-      <div className="App">Hello World</div>
+      <div className="App">
+        <Brief />
+      </div>
     </div>
   );
 }

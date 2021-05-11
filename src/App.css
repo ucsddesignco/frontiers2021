@@ -1,3 +1,59 @@
-.App {
-  text-align: center;
+/********* BRIEF ********/
+.brief-container {
+  background-color: #141414;
+  height: auto;
+  border: 1px solid #141414;
+}
+
+.brief-title {
+  font-size: 3.5rem;
+  color: #fff;
+  margin: 120px 8vw 0 8vw;
+}
+
+.brief-right-column {
+  position: relative;
+}
+
+.gradient-loop {
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.brief-paragraph {
+  font-size: 1.5rem;
+  color: #000;
+  position: absolute;
+  top: 0;
+  margin: 120px 8vw 0 8vw;
+}
+
+/********* Footer ********/
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5vw 8vw;
+  border: solid;
+  border-width: 0 1px 1px 0;
+}
+
+.footer img {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.footer a {
+  color: inherit;
+}
+
+.signature {
+  display: flex;
+  align-items: center;
+}
+
+.signature span {
+  display: flex;
 }
