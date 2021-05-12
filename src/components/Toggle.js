@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Toggle = ({ onChange }) => {
+export default function Toggle(props) {
   function openWindow() {
     window.open("https://forms.gle/CSqLiC4tHKe7oskt6", "_blank");
   }
@@ -8,12 +8,14 @@ const Toggle = ({ onChange }) => {
   function newLink() {
     console.log("I was clicked");
     setTimeout(function () {
-      openWindow();
+      // openWindow();
+      setTimeout(function () {
+        props.setToggled(true);
+      }, 1000);
     }, 1000);
-    // this.state = false;
   }
 
-  return <input type="checkbox" onChange={onChange} onClick={newLink}></input>;
-};
-
-export default Toggle;
+  return (
+    <input type="checkbox" onChange={props.onChange} onClick={newLink}></input>
+  );
+}
