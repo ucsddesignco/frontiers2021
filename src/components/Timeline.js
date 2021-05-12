@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Grid } from "@material-ui/core";
 import gr1 from "../assets/images/gr-1.svg";
 import gr2 from "../assets/images/gr-2.svg";
@@ -7,6 +7,8 @@ import Toggle from "./Toggle";
 import DarkBanner from "../assets/images/dark-banner.png";
 
 function Timeline() {
+  const [toggled, setToggled] = useState(false);
+
   return (
     <div>
       <img className="dark-banner" src={DarkBanner} />
@@ -56,7 +58,10 @@ function Timeline() {
             </div>
           </Grid>
         </Grid>
-        <Toggle />
+        <div className="toggle">
+          <Toggle onChange={(event) => setToggled(event.target.checked)} />
+          <span class="text-label">{toggled ? " " : "Register Here"}</span>
+        </div>
       </div>
     </div>
   );

@@ -204,6 +204,16 @@ body {
   position: relative;
 }
 
+/* ******** I HOPE U WORKED ********/
+.toggle {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
 .text-label {
   position: absolute;
   color: white;
