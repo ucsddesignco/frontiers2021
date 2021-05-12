@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid } from '@material-ui/core';
-import "./stylesheet.css";
+import "./Landing.css";
 import Navbar from "./Navbar.js";
 import DesignCo from "../assets/images/dco-logo.svg";
 import Banner from "../assets/images/frontiers-banner.svg"
