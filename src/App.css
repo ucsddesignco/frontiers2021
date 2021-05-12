@@ -15,8 +15,8 @@ body {
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../src/assets/fonts/Inter-Regular.ttf");
+  font-family: "NB International";
+  src: url("../src/assets/fonts/NB-International-Pro-Regular.woff") format("woff");
 }
 
 .details-container {
@@ -38,7 +38,7 @@ body {
 
 .details-container p {
   font-size: 1.5rem;
-  font-family: "Inter";
+  font-family: "NB International";
 }
 
 /********* TIMELINE ********/
