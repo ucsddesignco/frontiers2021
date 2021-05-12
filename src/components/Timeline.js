@@ -7,6 +7,23 @@ import Toggle from "./Toggle";
 import DarkBanner from "../assets/images/dark-banner.png";
 
 function Timeline() {
+  function newLink() {
+    console.log("I was clicked");
+    setTimeout(function () {
+      openWindow();
+    }, 1000);
+    // this.state = false;
+  }
+
+  function openWindow() {
+    window.open("https://ucsddesign.co/", "_blank");
+  }
+
+  function setChanges() {
+    newLink();
+    openWindow();
+  }
+
   const [toggled, setToggled] = useState(false);
 
   return (

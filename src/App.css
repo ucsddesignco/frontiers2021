@@ -70,12 +70,6 @@ body {
   width: 100%;
 }
 
-.event-banner {
-  background: url("assets/images/frontiers-banner.svg") no-repeat;
-  height: 20rem;
-  width: 100%;
-}
-
 .landing-title {
   color: #141414;
   font-size: 1.5rem;
@@ -247,10 +241,10 @@ input[type="checkbox"]:before {
   top: 0;
   left: 0;
   background: url(assets/images/arrow-notch.svg), no-repeat fixed center;
-  transform: scale(1.1);
+  transform: scale(1);
   transition: 0.5s;
 }
 
 input:checked[type="checkbox"]:before {
-  left: 230px;
+  left: 220px;
 }

@@ -7,7 +7,6 @@ function Landing() {
     <div>
       <Navbar />
       <div className="banner-container">
-        <div className="event-banner" alt="event-banner"></div>
         <h2 className="landing-title">
           Design Frontiers is Design Co’s annual design sprint where teams of
           creative, collaborative individuals tackle real problems in the world
