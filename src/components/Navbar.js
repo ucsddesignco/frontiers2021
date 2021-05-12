@@ -1,22 +1,28 @@
 import React from "react";
+import DesignCo from "../assets/images/dco-logo.svg";
 
 function Navbar() {
   return (
     <div>
-      <ul id="nav">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">FAQ</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
+      <div class="navbar">
+        <img src={DesignCo} alt="Design Co Logo" />
+        <nav>
+          <ul>
+            <li className="list-item">
+              <a>Overview</a>
+            </li>
+            <li className="list-item">
+              <a>Timeline</a>
+            </li>
+            <li className="list-item">
+              <a>Brief</a>
+            </li>
+            <li className="list-last-item">
+              <a>Register</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 }
