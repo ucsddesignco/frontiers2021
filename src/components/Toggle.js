@@ -1,25 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
-function ActionLink() {
-  function handleClick(e) {
-    alert("Clicked");
-    window.open("https://www.google.com/", "_blank");
+const Toggle = ({ onChange }) => {
+  function openWindow() {
+    window.open("https://forms.gle/CSqLiC4tHKe7oskt6", "_blank");
   }
-}
 
-function Toggle() {
-  return (
-    <div class="toggle">
-      {" "}
-      {/* position: relative */}
-      <input type="checkbox" name=""></input>
-      <span class="text-label">
-        {" "}
-        {/* position: absolute */}
-        Register Here
-      </span>
-    </div>
-  );
-}
+  function newLink() {
+    console.log("I was clicked");
+    setTimeout(function () {
+      openWindow();
+    }, 1000);
+    // this.state = false;
+  }
+
+  return <input type="checkbox" onChange={onChange} onClick={newLink}></input>;
+};
 
 export default Toggle;

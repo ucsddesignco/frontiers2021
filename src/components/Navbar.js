@@ -1,24 +1,28 @@
 import React from "react";
-import { Grid } from '@material-ui/core';
-import "./Landing.css";
+import DesignCo from "../assets/images/dco-logo.svg";
 
 function Navbar() {
   return (
-    <div className="navcontainer">
-      <ul id="nav">
-        <li>
-          <a href="#" className="navtext">Overview</a>
-        </li>
-        <li>
-          <a href="#" className="navtext">Timeline</a>
-        </li>
-        <li>
-          <a href="#" className="navtext">Brief</a>
-        </li>
-        <li>
-          <a href="#" className="navtext">Register</a>
-        </li>
-      </ul>
+    <div>
+      <div class="navbar">
+        <img src={DesignCo} alt="Design Co Logo" />
+        <nav>
+          <ul>
+            <li className="list-item">
+              <a>Overview</a>
+            </li>
+            <li className="list-item">
+              <a>Timeline</a>
+            </li>
+            <li className="list-item">
+              <a>Brief</a>
+            </li>
+            <li className="list-last-item">
+              <a>Register</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 }

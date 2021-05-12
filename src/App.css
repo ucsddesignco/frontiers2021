@@ -5,6 +5,75 @@ html {
 body {
   margin: 0;
   padding: 0;
+  color: #141414;
+}
+
+/********* FONTS ********/
+
+@font-face {
+  font-family: "Neue Plak";
+  src: url("../src/assets/fonts/NeuePlak-ExtendedBold.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "NB International Regular";
+  src: url("../src/assets/fonts/NB-International-Pro-Regular.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "NB International Mono";
+  src: url("../src/assets/fonts/NBInternationalMonoWebfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "NB International Light";
+  src: url("../src/assets/fonts/NBInternationalPro-Lig.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter Light";
+  src: url("../src/assets/fonts/Inter-Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Inter Regular";
+  src: url("../src/assets/fonts/Inter-Regular.ttf") format("ttf");
+}
+
+/********* NAVBAR ********/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5vw 8vw;
+  width: auto;
+  height: 70px;
+  background-color: #fff;
+}
+
+.list-item {
+  display: inline-block;
+  margin-right: 2.5rem;
+  font-size: 1.25rem;
+}
+
+.list-last-item {
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+/********* LANDING ********/
+.banner-container {
+  width: 100%;
+}
+
+.landing-title {
+  color: #141414;
+  font-size: 1.5rem;
+  margin: 3.5rem 8vw;
 }
 
 /********* Details *********/
@@ -42,6 +111,11 @@ body {
 }
 
 /********* TIMELINE ********/
+.dark-banner {
+  width: 100%;
+  height: auto;
+}
+
 .timeline-section {
   width: auto;
   height: auto;
@@ -53,6 +127,7 @@ body {
   color: #141414;
   font-size: 3.5rem;
   margin: 3.5rem 8vw;
+  font-family: "Neue Plak";
 }
 
 .gr-circles {
@@ -70,8 +145,14 @@ body {
 
 .timeline-title {
   font-family: "Neue Plak";
-  src: url("../src/assets/fonts/NeuePlak-ExtendedBold.woff") format("woff");
-  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.timeline-p {
+  font-family: "NB International";
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #141414;
 }
 
 /********* BRIEF ********/
@@ -82,9 +163,10 @@ body {
 }
 
 .brief-title {
+  font-family: "Neue Plak";
   font-size: 3.5rem;
   color: #fff;
-  margin: 120px 8vw 0 8vw;
+  margin: 90px 8vw 0 8vw;
 }
 
 .brief-right-column {
@@ -100,6 +182,7 @@ body {
 
 .brief-paragraph {
   font-size: 1.5rem;
+  font-family: "Inter";
   color: #141414;
   position: absolute;
   top: 0;
@@ -116,6 +199,10 @@ body {
   border-width: 0 1px 1px 0;
 }
 
+#email {
+  font-family: "Inter";
+}
+
 .signature img {
   display: inline-block;
   margin-left: 1rem;
@@ -128,6 +215,7 @@ body {
 .signature {
   display: flex;
   align-items: center;
+  font-family: "Inter";
 }
 
 .signature span {
@@ -135,6 +223,16 @@ body {
 }
 
 /********* TOGGLE ********/
+.toggle {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+/* ******** I HOPE U WORKED ********/
 .toggle {
   width: 100%;
   justify-content: center;
@@ -156,7 +254,7 @@ input[type="checkbox"] {
   width: 322px;
   height: 102px;
   -webkit-appearance: none;
-  background: #000;
+  background: #141414;
   outline: none;
   border-radius: 100px;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
@@ -177,10 +275,10 @@ input[type="checkbox"]:before {
   top: 0;
   left: 0;
   background: url(assets/images/arrow-notch.svg), no-repeat fixed center;
-  transform: scale(1.1);
+  transform: scale(1);
   transition: 0.5s;
 }
 
 input:checked[type="checkbox"]:before {
-  left: 230px;
+  left: 220px;
 }

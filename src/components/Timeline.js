@@ -1,13 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { Grid } from "@material-ui/core";
 import gr1 from "../assets/images/gr-1.svg";
 import gr2 from "../assets/images/gr-2.svg";
 import gr3 from "../assets/images/gr-3.svg";
 import Toggle from "./Toggle";
+import DarkBanner from "../assets/images/dark-banner.png";
 
 function Timeline() {
+  function newLink() {
+    console.log("I was clicked");
+    setTimeout(function () {
+      openWindow();
+    }, 1000);
+    // this.state = false;
+  }
+
+  function openWindow() {
+    window.open("https://ucsddesign.co/", "_blank");
+  }
+
+  function setChanges() {
+    newLink();
+    openWindow();
+  }
+
+  const [toggled, setToggled] = useState(false);
+
   return (
     <div>
+      <img className="dark-banner" src={DarkBanner} />
       <div className="timeline-section">
         <h2 className="white-scrim">Timeline of Design Frontiers</h2>
         <Grid container>
@@ -54,7 +75,10 @@ function Timeline() {
             </div>
           </Grid>
         </Grid>
-        <Toggle />
+        <div className="toggle">
+          <Toggle onChange={(event) => setToggled(event.target.checked)} />
+          <span class="text-label">{toggled ? " " : "Register Here"}</span>
+        </div>
       </div>
     </div>
   );

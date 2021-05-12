@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import GradientLoop from "../assets/images/gr-compressed.mp4";
-// import GradientImg from "../assets/images/temporary-banner.png";
 import Love from "../assets/images/heart.svg";
 import DesignCo from "../assets/images/dco-logo.svg";
 
@@ -14,7 +13,6 @@ function Brief() {
         </Grid>
         <Grid item sm={8}>
           <div class="brief-right-column">
-            {/* <img src={GradientImg} className="gradient-img" /> */}
             <video autoPlay loop muted className="gradient-loop">
               <source src={GradientLoop} type="video/mp4" />
             </video>
