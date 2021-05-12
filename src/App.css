@@ -85,7 +85,8 @@ body {
 
 @font-face {
   font-family: "NB International";
-  src: url("../src/assets/fonts/NB-International-Pro-Regular.woff") format("woff");
+  src: url("../src/assets/fonts/NB-International-Pro-Regular.woff")
+    format("woff");
 }
 
 .details-container {
@@ -97,7 +98,7 @@ body {
 }
 
 .details-info {
-  color: white; 
+  color: white;
 }
 
 .details-container h2 {

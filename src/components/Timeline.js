@@ -4,7 +4,6 @@ import gr1 from "../assets/images/gr-1.svg";
 import gr2 from "../assets/images/gr-2.svg";
 import gr3 from "../assets/images/gr-3.svg";
 import Toggle from "./Toggle";
-import DarkBanner from "../assets/images/dark-banner.png";
 
 function Timeline() {
   function newLink() {
@@ -28,7 +27,6 @@ function Timeline() {
 
   return (
     <div>
-      <img className="dark-banner" src={DarkBanner} />
       <div className="timeline-section">
         <h2 className="white-scrim">Timeline of Design Frontiers</h2>
         <Grid container>
