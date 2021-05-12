@@ -4,6 +4,7 @@ import Brief from "./components/Brief";
 import Timeline from "./components/Timeline";
 
 function App() {
+<<<<<<< HEAD
   return (
     <div>
       <div className="App">
@@ -13,6 +14,9 @@ function App() {
       </div>
     </div>
   );
+=======
+  return <div className="App">Hello World</div>;
+>>>>>>> parent of c7b091c5... Framework is GTG 👍
 }
 
 export default App;
