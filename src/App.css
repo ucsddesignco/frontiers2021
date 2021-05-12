@@ -77,24 +77,12 @@ body {
 }
 
 /********* Details *********/
-@font-face {
-  font-family: "Neue Plak";
-  src: url("../src/assets/fonts/NeuePlak-ExtendedBold.woff") format("woff");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "NB International";
-  src: url("../src/assets/fonts/NB-International-Pro-Regular.woff")
-    format("woff");
-}
-
 .details-container {
   background-color: #141414;
-  width: auto;
+  width: 100%;
   height: auto;
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
 }
 
 .details-info {
@@ -107,8 +95,9 @@ body {
 }
 
 .details-container p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: "NB International";
+  line-height: 1.5;
 }
 
 /********* TIMELINE ********/
