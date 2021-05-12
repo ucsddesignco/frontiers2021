@@ -31,10 +31,20 @@ body {
 }
 
 /********* LANDING ********/
-.event-banner {
+.banner-container {
   width: 100%;
-  height: 100%;
-  margin-top: 3rem;
+}
+
+.event-banner {
+  background: url("assets/images/frontiers-banner.svg") no-repeat;
+  height: 20rem;
+  width: 100%;
+}
+
+.landing-title {
+  color: #141414;
+  font-size: 1.5rem;
+  margin: 3.5rem 8vw;
 }
 
 /********* TIMELINE ********/
