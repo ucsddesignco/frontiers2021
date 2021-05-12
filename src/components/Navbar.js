@@ -1,20 +1,22 @@
 import React from "react";
+import { Grid } from '@material-ui/core';
+import "./Landing.css";
 
 function Navbar() {
   return (
-    <div>
+    <div className="navcontainer">
       <ul id="nav">
         <li>
-          <a href="#">Home</a>
+          <a href="#" className="navtext">Overview</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#" className="navtext">Timeline</a>
         </li>
         <li>
-          <a href="#">FAQ</a>
+          <a href="#" className="navtext">Brief</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#" className="navtext">Register</a>
         </li>
       </ul>
     </div>
