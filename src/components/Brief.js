@@ -28,9 +28,9 @@ function Brief() {
         <p className="signature">
           <span className="footer-text">
             Made with
-            <img src={Love} alt="Love" />
+            <img className="footer-logo" src={Love} alt="Love" />
           </span>
-          <img src={DesignCo} alt="Design Co" />
+          <img className="footer-logo" src={DesignCo} alt="Design Co" />
         </p>
 
         <a id="email" className="footer-text" href="mailto:hello@ucsddesign.co">

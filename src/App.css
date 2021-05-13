@@ -142,16 +142,18 @@ body {
   position: relative;
 }
 
-.top-banner, .bottom-banner {
+.top-banner,
+.bottom-banner {
   height: 15vw;
   margin: 0.25rem 0;
 }
 
 @media (max-width: 480px) {
-  .top-banner, .bottom-banner {
+  .top-banner,
+  .bottom-banner {
     height: 32vw;
     position: relative;
-    left: -93vw
+    left: -93vw;
   }
 }
 
@@ -167,7 +169,7 @@ body {
   height: 5vw;
   margin: 0;
   padding: calc((15vw - 5vw) / 2) 0;
-  color: #FFF;
+  color: #fff;
 }
 
 @media (max-width: 480px) {
@@ -267,6 +269,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
+  float: left;
 }
 
 .timeline-section {
@@ -335,6 +338,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 1.25rem;
+    float: left;
   }
 
   .white-scrim {
@@ -541,11 +545,15 @@ body {
 
 .signature img {
   display: inline-block;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .footer a {
   color: inherit;
+}
+
+.footer-logo {
+  height: 22px;
 }
 
 .signature {
