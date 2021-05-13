@@ -21,6 +21,11 @@ function Timeline() {
             </p>
           </div>
         </div>
+        <p class="timeline-invisible">
+          Design Frontiers will start with a workshop from Fjord, and the brief
+          will be released during this event. Students will then start designing
+          with the given brief and continue iterating throughout the weekend.
+        </p>
         <div className="timeline-item">
           <img src={gr2} className="gr-circles" alt="number-1" />
           <div class="timeline-details">
@@ -33,6 +38,10 @@ function Timeline() {
             </p>
           </div>
         </div>
+        <p class="timeline-invisible">
+          Teams will put their finishing touches on their prototypes and submit
+          a 1-minute video presentation of their designs.
+        </p>
         <div className="timeline-item">
           <img src={gr3} className="gr-circles" alt="number-1" />
           <div class="timeline-details">
@@ -45,6 +54,10 @@ function Timeline() {
             </p>
           </div>
         </div>
+        <p class="timeline-invisible-last">
+          Fjord will review each team's presentation and cast their votes for
+          the top 3 teams. The winning teams will receive prizes!
+        </p>
         <ToggleTimeline />
       </div>
     </div>
