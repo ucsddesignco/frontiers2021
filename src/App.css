@@ -98,17 +98,6 @@ body {
   left: 0;
 }
 
-/* span {
-  width: 60rem;
-  height: auto;
-
-    background: url(assets/images/top-banner.png), no-repeat fixed center;
-  background-size: contain;
-  background-position: right;
-  height: auto;
-  padding: 2rem;
-} */
-
 /********* DETAILS *********/
 .details-container {
   background-color: #141414;
@@ -134,7 +123,47 @@ body {
   width: 80%;
 }
 
+/**** Details Media Query ***/
+@media (max-width: 768px) {
+  .details-container {
+    background-color: #141414;
+    width: auto;
+    height: auto;
+    padding: 6rem 8vw 3rem 8vw;
+  }
+
+  .details-container h2 {
+    font-size: 1.75rem;
+    font-family: "Neue Plak";
+    width: 100%;
+  }
+
+  .details-container p {
+    font-size: 1.25rem;
+    font-family: "NB International";
+    line-height: 1.5;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-container {
+    background-color: #141414;
+    width: auto;
+    height: auto;
+    padding: 4rem 8vw 3rem 8vw;
+  }
+}
+
 /********* TIMELINE ********/
+.timeline-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
 .timeline-section {
   width: auto;
   height: auto;
@@ -147,6 +176,7 @@ body {
   color: #141414;
   font-size: 3.5rem;
   margin: 3.5rem 8vw;
+  line-height: 1.25;
   font-family: "Neue Plak";
 }
 
@@ -154,7 +184,7 @@ body {
   width: auto;
   height: 9rem;
   margin-left: 8vw;
-  margin-bottom: 5rem;
+  margin-right: 2.5rem;
 }
 
 .timeline-details {
@@ -169,34 +199,113 @@ body {
 }
 
 .timeline-p {
-  font-family: "NB International";
+  font-family: "Inter";
   font-size: 1.25rem;
   line-height: 1.5;
   color: #141414;
 }
 
+/**** Timeline Media Query ***/
+@media (max-width: 768px) {
+  .timeline-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .white-scrim {
+    color: #141414;
+    font-size: 2.5rem;
+    line-height: 1.25;
+    margin: 3.5rem 8vw;
+    font-family: "Neue Plak";
+  }
+
+  .gr-circles {
+    width: auto;
+    height: 6rem;
+    margin-left: 8vw;
+    margin-right: 2.5rem;
+  }
+
+  .timeline-title {
+    font-family: "Neue Plak";
+    font-size: 1rem;
+  }
+
+  .timeline-p {
+    font-family: "Inter";
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #141414;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .white-scrim {
+    color: #141414;
+    font-size: 2rem;
+    line-height: 1.25;
+    margin: 3.5rem 8vw;
+    font-family: "Neue Plak";
+  }
+
+  .gr-circles {
+    width: auto;
+    height: 6rem;
+    margin-left: 8vw;
+    margin-right: 2.5rem;
+  }
+
+  .timeline-title {
+    font-family: "Neue Plak";
+    font-size: 1rem;
+  }
+
+  .timeline-p {
+    font-family: "Inter";
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #141414;
+  }
+}
+
 /********* BRIEF ********/
 .brief-container {
   background-color: #141414;
-  height: auto;
+  height: 100%;
   border: 1px solid #141414;
+  display: flex;
 }
 
 .brief-title {
   font-family: "Neue Plak";
   font-size: 3.5rem;
   color: #fff;
-  margin: 90px 8vw 0 8vw;
+  margin: 4rem 8vw;
 }
 
-.brief-right-column {
+.brief-container-right {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .gradient-loop {
   height: auto;
   max-width: 100%;
-  max-height: 100%;
   object-fit: cover;
 }
 
@@ -206,7 +315,63 @@ body {
   color: #141414;
   position: absolute;
   top: 0;
-  margin: 7.5rem 8vw 0 8vw;
+  margin: 6rem 8vw 0 8vw;
+  line-height: 1.5;
+}
+
+/**** Timeline Media Query ***/
+@media (max-width: 992px) {
+  .brief-title {
+    font-family: "Neue Plak";
+    font-size: 3rem;
+    color: #fff;
+    margin: 4rem 8vw;
+  }
+  .brief-paragraph {
+    font-size: 1.25rem;
+    font-family: "Inter";
+    color: #141414;
+    position: absolute;
+    top: 0;
+    margin: 5rem 8vw 0 8vw;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 768px) {
+  .brief-title {
+    font-family: "Neue Plak";
+    font-size: 2rem;
+    color: #fff;
+    margin: 4rem 8vw;
+  }
+  .brief-paragraph {
+    font-size: 1rem;
+    font-family: "Inter";
+    color: #141414;
+    position: absolute;
+    top: 0;
+    margin: 5rem 8vw 0 8vw;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 600px) {
+  .brief-title {
+    font-family: "Neue Plak";
+    font-size: 2rem;
+    color: #fff;
+    margin: 1rem 8vw;
+  }
+  .brief-paragraph {
+    font-size: 1rem;
+    font-family: "Inter";
+    color: #141414;
+    position: absolute;
+    top: 0;
+    margin: 2rem 8vw 0 8vw;
+    line-height: 1.5;
+  }
 }
 
 /********* Footer ********/
@@ -215,8 +380,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1.5vw 8vw;
-  border: solid;
-  border-width: 0 1px 1px 0;
+  border-top: 2px solid #141414;
 }
 
 #email {
