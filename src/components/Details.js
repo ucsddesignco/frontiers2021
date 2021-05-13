@@ -6,7 +6,7 @@ function Details() {
   return (
     <div>
       <div className="details-container">
-        <Grid container>
+        <Grid container spacing={2}>
           <Grid item sm={12} md={6} className="details-info">
             <h2>Who can participate?</h2>
             <p>
