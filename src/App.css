@@ -212,7 +212,7 @@ a:hover {
 
 .details-container p {
   font-size: 1.25rem;
-  font-family: "NB International";
+  font-family: "Inter";
   line-height: 1.5;
   width: 80%;
 }
@@ -234,7 +234,7 @@ a:hover {
 
   .details-container p {
     font-size: 1.25rem;
-    font-family: "NB International";
+    font-family: "Inter";
     line-height: 1.5;
     width: 100%;
   }
