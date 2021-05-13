@@ -22,10 +22,10 @@ const ToggleDark = () => {
   }
 
   return (
-    <div className="toggle-dark no-fastclick"  onClick={newLink}>
+    <label className="toggle-dark no-fastclick"  onClick={newLink}>
       <input id="test-dark" type="checkbox"></input>
       <span className="text-label-dark">{toggled ? " " : "Register Here"}</span>
-    </div>
+    </label>
   );
 };
 

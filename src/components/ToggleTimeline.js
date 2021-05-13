@@ -22,10 +22,10 @@ const ToggleTimeline = () => {
   }
 
   return (
-    <div className="toggle no-fastclick" onClick={newLink}>
+    <label className="toggle no-fastclick" onClick={newLink}>
       <input id="test-timeline" type="checkbox"></input>
       <span class="text-label">{toggled ? " " : "Register Here"}</span>
-    </div>
+    </label>
   );
 };
 
