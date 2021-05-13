@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
-const Toggle = () => {
+const Toggle = props => {
   const [toggled, setToggled] = useState(false);
 
   function openWindow() {
-    window.open("https://forms.gle/CSqLiC4tHKe7oskt6", "_blank");
+    let defaultUrl = "https://forms.gle/CSqLiC4tHKe7oskt6"; 
+    window.open(props.url || defaultUrl, "_blank");
   }
 
   function newLink() {
@@ -13,18 +14,25 @@ const Toggle = () => {
     setToggled(true);
     console.log("I was clicked");
     setTimeout(function () {
-      openWindow();
-      setTimeout(function () {
-        el.checked = false;
-        setToggled(false);
-      }, 1000);
+      // openWindow();
+
+      if (!props.onChange()) {
+        setTimeout(function () {
+          el.checked = false;
+          setToggled(false);
+        }, 1000);
+      } else {
+        props.onChange();
+      }
     }, 1000);
   }
 
   return (
     <div className="toggle">
       <input id="test" type="checkbox" onClick={newLink}></input>
-      <span class="text-label">{toggled ? " " : "Register Here"}</span>
+      <span class="text-label">
+        {toggled ? " " : (props.text || "Register Now")}
+      </span>
     </div>
   );
 };
