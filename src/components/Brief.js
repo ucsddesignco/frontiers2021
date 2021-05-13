@@ -13,7 +13,7 @@ function Brief() {
           <h2 className="brief-title">Brief</h2>
         </div>
         <div className="brief-container-right">
-          <video autoPlay loop muted className="gradient-loop">
+          <video autoPlay loop muted playsInline className="gradient-loop">
             <source src={GradientLoop} type="video/mp4" />
           </video>
           <p className="brief-paragraph">
