@@ -10,7 +10,7 @@ function App() {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Frontiers 2021: Design Co</title>
+        <title>Design Frontiers 2021: Design Co</title>
       </Helmet>
       <div className="App">
         <Landing />
