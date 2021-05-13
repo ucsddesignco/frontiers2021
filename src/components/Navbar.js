@@ -19,16 +19,16 @@ function Navbar() {
       <nav className="desktop">
         <ul>
           <li className="list-item">
-            <a>Overview</a>
+            <a href="#details">Overview</a>
           </li>
           <li className="list-item">
-            <a>Timeline</a>
+            <a href="#timeline">Timeline</a>
           </li>
           <li className="list-item">
-            <a>Brief</a>
+            <a href="#brief">Brief</a>
           </li>
           <li className="list-last-item">
-            <a>Register</a>
+            <a href="https://forms.gle/CSqLiC4tHKe7oskt6" target="_blank">Register</a>
           </li>
         </ul>
       </nav>

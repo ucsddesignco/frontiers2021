@@ -23,7 +23,7 @@ function Landing() {
           and design for innovation.
         </h2>
       </div>
-      <Toggle />
+      <Toggle id="landingToggle" />
     </div>
   );
 }

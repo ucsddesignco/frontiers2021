@@ -13,18 +13,17 @@ const Toggle = props => {
     }
   }
 
-  function newLink() {
-    let el = document.getElementById("test");
+  function newLink(id) {
+    let el = document.getElementById(id);
 
     setToggled(true);
     document.body.style.overflow = "visible";
     document.documentElement.style.overflow = "visible";
 
-    console.log("I was clicked");
     setTimeout(function () {
       openWindow();
 
-      if (!props.onChange()) {
+      if (!props.onChange) {
         setTimeout(function () {
           el.checked = false;
           setToggled(false);
@@ -37,7 +36,11 @@ const Toggle = props => {
 
   return (
     <div className="toggle">
-      <input id="test" type="checkbox" onClick={newLink}></input>
+      <input 
+        id={props.id} 
+        type="checkbox" 
+        onClick={() => { newLink(props.id) }}
+      ></input>
       <span class="text-label">
         {toggled ? " " : (props.text || "Register Now")}
       </span>
