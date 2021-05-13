@@ -1,30 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Grid } from "@material-ui/core";
 import gr1 from "../assets/images/gr-1.svg";
 import gr2 from "../assets/images/gr-2.svg";
 import gr3 from "../assets/images/gr-3.svg";
 import Toggle from "./Toggle";
+import ToggleTimeline from "./ToggleTimeline";
 
 function Timeline() {
-  function newLink() {
-    console.log("I was clicked");
-    setTimeout(function () {
-      openWindow();
-    }, 1000);
-    // this.state = false;
-  }
-
-  function openWindow() {
-    window.open("https://ucsddesign.co/", "_blank");
-  }
-
-  function setChanges() {
-    newLink();
-    openWindow();
-  }
-
-  const [toggled, setToggled] = useState(false);
-
   return (
     <div>
       <div className="timeline-section">
@@ -61,7 +43,7 @@ function Timeline() {
           <Grid item sm={4} md={3}>
             <img src={gr3} className="gr-circles" alt="number-3" />
           </Grid>
-          <Grid item sm={8} md={9}>
+          <Grid item xs={12} sm={8} md={9}>
             <div class="timeline-details">
               <h2 class="timeline-title">
                 Judging, Feedback, Final Presentations | Thursday, May 27
@@ -73,7 +55,7 @@ function Timeline() {
             </div>
           </Grid>
         </Grid>
-        <Toggle />
+        <ToggleTimeline />
       </div>
     </div>
   );

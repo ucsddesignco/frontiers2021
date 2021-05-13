@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-// import Banner from "../assets/images/frontiers-banner.svg";
+import Toggle from "./Toggle";
 
 function Landing() {
   return (
@@ -13,6 +13,7 @@ function Landing() {
           and design for innovation.
         </h2>
       </div>
+      <Toggle />
     </div>
   );
 }

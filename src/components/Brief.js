@@ -17,7 +17,9 @@ function Brief() {
               <source src={GradientLoop} type="video/mp4" />
             </video>
             <p className="brief-paragraph">
-              Why don’t you come to our Kick-off event to find out? ;)
+              We've been brewing some cool design briefs for Design Frontiers,
+              and we can't wait to reveal it at our kickoff event! Until then,
+              we wish you the best of luck in finding a team!
             </p>
           </div>
         </Grid>
