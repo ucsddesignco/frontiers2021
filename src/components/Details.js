@@ -4,7 +4,7 @@ import ToggleDark from "./ToggleDark";
 
 function Details() {
   return (
-    <div>
+    <div id="details">
       <div className="details-container">
         <Grid container>
           <Grid item sm={12} md={6} className="details-info">

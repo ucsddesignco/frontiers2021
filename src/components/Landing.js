@@ -7,7 +7,7 @@ import BottomBanner from "../assets/images/bottom-banner.png";
 
 function Landing() {
   return (
-    <div>
+    <div id="landing">
       <Navbar />
       <div className="landing-section">
         <div className="top-container">

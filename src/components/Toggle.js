@@ -5,16 +5,24 @@ const Toggle = props => {
 
   function openWindow() {
     let defaultUrl = "https://forms.gle/CSqLiC4tHKe7oskt6"; 
-    window.open(props.url || defaultUrl, "_blank");
+
+    if (props.href) {
+      document.getElementById(props.href).scrollIntoView(true);
+    } else {
+      window.open(defaultUrl, "_blank");
+    }
   }
 
   function newLink() {
     let el = document.getElementById("test");
 
     setToggled(true);
+    document.body.style.overflow = "visible";
+    document.documentElement.style.overflow = "visible";
+
     console.log("I was clicked");
     setTimeout(function () {
-      // openWindow();
+      openWindow();
 
       if (!props.onChange()) {
         setTimeout(function () {

@@ -7,6 +7,12 @@ import Exit from "../assets/images/exit.svg";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleMenuClick = () => {
+    document.body.style.overflow = menuOpen ? "visible" : "hidden" ;
+    document.documentElement.style.overflow = menuOpen ? "visible" : "hidden";
+    setMenuOpen(!menuOpen);
+  }
+
   return (
     <div class="navbar">
       <img id="logo" src={DesignCo} alt="Design Co Logo" />
@@ -31,17 +37,17 @@ function Navbar() {
         <img 
           id="menu"
           src={menuOpen ? Exit : Menu} 
-          onClick={() => { setMenuOpen(!menuOpen) }} 
+          onClick={() => { handleMenuClick() }} 
           alt="Menu" 
-          width="60px"
-          height="60px"
+          width="55px"
+          height="55px"
         />
         {
           menuOpen &&
           <div className="nav-container">
-            <Toggle text="Overview" onChange={() => { setMenuOpen(false) }} />
-            <Toggle text="Timeline" onChange={() => { setMenuOpen(false) }} />
-            <Toggle text="Brief" onChange={() => { setMenuOpen(false) }} />
+            <Toggle text="Overview" href="details" onChange={() => { setMenuOpen(false) }} />
+            <Toggle text="Timeline" href="timeline" onChange={() => { setMenuOpen(false) }} />
+            <Toggle text="Brief" href="brief" onChange={() => { setMenuOpen(false) }} />
           </div>
         }
       </nav>
