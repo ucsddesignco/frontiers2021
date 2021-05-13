@@ -15,11 +15,11 @@ function Landing() {
       <div className="Landing">
         <div className="logo"/>
         <Navbar></Navbar>
-        <div className="nav-menu"></div>
+        <div className="nav-menu" href="Menu.js"></div>
       </div>
 
-      <div className="row">
-        <Grid container alignItems="center" direction="row" spacing={1} className="top-container">
+      
+      <Grid container alignItems="center" direction="row" spacing={1}>
           <Grid container item xs={8} sm={9} md={9}>
            <div className="banner-topleft">
              <p className="long-text">Design Frontiers 2021</p>
@@ -47,7 +47,7 @@ function Landing() {
           </Grid>  
         </Grid>
         
-      </div> 
+      
 
       <div className="row">
         <div className="landing-text">Design Frontiers is Design Co’s annual design sprint where teams of creative, collaborative individuals tackle real problems in the world and design for innovation.</div>

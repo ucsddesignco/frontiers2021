@@ -64,17 +64,20 @@ body {
     display: flex;
     background-image: url("../assets/images/top-left.svg");
     background-size: cover;
-    padding: 6.5vw 30.4vw;
+    height: 13vw; 
+    width: 60vw;
     background-position: right;
     background-repeat: no-repeat;
+    align-self: center;
+    justify-items: flex-start;
+    
 }
 
 .long-text {
-    position: absolute;
     font-size: 3.5vw;
     color: white;
-    left: 8vw;
-    top: 19.5vw;
+    margin: auto;
+    margin-left: 8vw;
 }
 
 .short-text {
@@ -138,11 +141,11 @@ body {
 /********* Menu ********/
 .menu {
     display: flex;
+    flex-direction: row;
 }
 
 .menu-menu {
     display: flex;
-    place-items: center;
     flex-direction: column;
     font-size: 3rem;
     list-style: none;
@@ -154,7 +157,6 @@ body {
 .menu-container {
     display: flex;
     height: 100vh;
-    
 }
 
 .menu-button {
@@ -174,10 +176,13 @@ body {
 
 .menu-exit {
     display: flex;
-    height: 2vw;
-    width: 2vw;
-    margin: 8vw 0px 8vw 8vw;
-    justify-self: flex-end;
+    height: 25px;
+    width: 25px;
+    background-image: url("../assets/images/exit.svg");
+    margin: auto 0px;
+    margin-left: auto;
+    margin-right: 4vw;
+    background-size: cover;
 }
 
 .menu-logo {
@@ -186,7 +191,7 @@ body {
     min-width: 240px;
     background-image: url("../assets/images/dco-logo.svg");
     justify-self: flex-start;
-    margin: 8vw 0px 8vw 8vw;
+    margin: 4vw 0px 4vw 4vw;
     background-repeat: no-repeat;
     
 }
@@ -260,7 +265,8 @@ body {
     }
 
     .banner-topleft {
-        padding: 13vw 24vw;
+        height: 25vw;
+        width: 46vw;
     }
 
     .banner-topright {
@@ -312,12 +318,16 @@ body {
     }
     
     .short-text {
-        position: absolute;
         font-size: 8vw;
-        width: 15vw;
         color: white;
-        left: 8vw;
-        top: 14vw;
+        margin: auto;
+        margin-left: 6vw;
         
     }
+
+    .menu-exit {
+        height: 18px;
+        width: 18px;
+    }
+    
 }
