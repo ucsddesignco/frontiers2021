@@ -1,21 +1,32 @@
 import React, { useState } from "react";
 
-export default function Toggle(props) {
+const Toggle = () => {
+  const [toggled, setToggled] = useState(false);
+
   function openWindow() {
     window.open("https://forms.gle/CSqLiC4tHKe7oskt6", "_blank");
   }
 
   function newLink() {
+    let el = document.getElementById("test");
+
+    setToggled(true);
     console.log("I was clicked");
     setTimeout(function () {
-      // openWindow();
+      openWindow();
       setTimeout(function () {
-        props.setToggled(true);
+        el.checked = false;
+        setToggled(false);
       }, 1000);
     }, 1000);
   }
 
   return (
-    <input type="checkbox" onChange={props.onChange} onClick={newLink}></input>
+    <div className="toggle">
+      <input id="test" type="checkbox" onClick={newLink}></input>
+      <span class="text-label">{toggled ? " " : "Register Here"}</span>
+    </div>
   );
-}
+};
+
+export default Toggle;

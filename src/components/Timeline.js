@@ -73,13 +73,7 @@ function Timeline() {
             </div>
           </Grid>
         </Grid>
-        <div className="toggle">
-          <Toggle
-            setToggled
-            onChange={(event) => setToggled(event.target.checked)}
-          />
-          <span class="text-label">{toggled ? " " : "Register Here"}</span>
-        </div>
+        <Toggle />
       </div>
     </div>
   );

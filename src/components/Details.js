@@ -5,12 +5,7 @@ function Details() {
   return (
     <div>
       <div className="details-container">
-        <Grid
-          className="details-container2"
-          container
-          justify="center"
-          spacing={5}
-        >
+        <Grid className="details-container2" container justify="center">
           <Grid item xs={10} md={5}>
             <div class="details-info">
               <h2>Who can participate?</h2>
