@@ -1,6 +1,7 @@
 html {
   cursor: url(assets/images/cursor.svg), auto;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
