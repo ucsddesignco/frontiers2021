@@ -3,7 +3,6 @@ import { Grid } from "@material-ui/core";
 import gr1 from "../assets/images/gr-1.svg";
 import gr2 from "../assets/images/gr-2.svg";
 import gr3 from "../assets/images/gr-3.svg";
-import Toggle from "./Toggle";
 import ToggleTimeline from "./ToggleTimeline";
 
 function Timeline() {
