@@ -9,7 +9,7 @@ const Toggle = props => {
     if (props.href) {
       document.getElementById(props.href).scrollIntoView(true);
     } else {
-      window.open(defaultUrl, "_blank");
+      window.location.assign(defaultUrl, "_blank");
     }
   }
 

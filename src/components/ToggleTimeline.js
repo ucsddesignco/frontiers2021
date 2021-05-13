@@ -4,7 +4,7 @@ const ToggleTimeline = () => {
   const [toggled, setToggled] = useState(false);
 
   function openWindow() {
-    window.open("https://forms.gle/CSqLiC4tHKe7oskt6", "_blank");
+    window.location.assign("https://forms.gle/CSqLiC4tHKe7oskt6", "_blank");
   }
 
   function newLink() {
