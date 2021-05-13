@@ -2,7 +2,10 @@
 body {
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
+
+
 
 /********* NavBar ********/
 .navcontainer {
@@ -27,7 +30,7 @@ body {
     font-family: neueplak;
 }
 
-/********* NavBar ********/
+/********* Landing ********/
 .Landing {
     display: flex;
 }
@@ -40,7 +43,7 @@ body {
     justify-self: flex-start;
     margin: 8vw 0px 8vw 8vw;
     background-repeat: no-repeat;
-
+    
 }
 
 .landing-container {
@@ -55,9 +58,266 @@ body {
     background-repeat: no-repeat;
 }
 
+
+
+.banner-topleft {
+    display: flex;
+    background-image: url("../assets/images/top-left.svg");
+    background-size: cover;
+    padding: 6.5vw 30.4vw;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.long-text {
+    position: absolute;
+    font-size: 3.5vw;
+    color: white;
+    left: 8vw;
+    top: 19.5vw;
+}
+
+.short-text {
+    font-size: 0rem;
+}
+
+.banner-topright {
+   
+    padding: 6.5vw;
+    background-image: url("../assets/images/top-right.svg");
+    background-size: cover;
+    transform: translateX(-12.5vw);
+}
+
+.bottom-container {
+    max-height: 25vw;
+    max-width: 80%;
+    margin: 2vw 0vw;
+}
+
+.banner-bottomleft {
+    padding: 6.5vw 5vw;
+    background-size: contain;
+    background-image: url("../assets/images/bottom-left.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.banner-bottomcenter {
+    padding: 6.5vw 20vw;
+    background-size: contain;
+    background-image: url("../assets/images/bottom-center.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: translateX(-3.5vw);
+}
+
+.banner-bottomright {
+    padding: 6.5vw 20vw;
+    background-size: contain;
+    background-image: url("../assets/images/bottom-right.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: translateX(3vw);
+}
+
 .landing-text {
     display: flex;
     font-size: 1.5rem;
     justify-self: center;
     margin: 2vw 8vw 8vw;
+}
+
+.button {
+    height: 50px;
+    width: 190px;
+    background-color: black;
+    margin: 8vw auto 16vw;
+}
+
+/********* Menu ********/
+.menu {
+    display: flex;
+}
+
+.menu-menu {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    font-size: 3rem;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    height: 100vh;
+    
+}
+
+.menu-button {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    margin: 3vw;
+    
+}
+
+.menu-navbar {
+    display: flex;
+    border-bottom: 1px solid black;
+    margin-bottom: 4vw;
+}
+
+.menu-exit {
+    display: flex;
+    height: 2vw;
+    width: 2vw;
+    margin: 8vw 0px 8vw 8vw;
+    justify-self: flex-end;
+}
+
+.menu-logo {
+    display: flex;
+    height: 31px;
+    min-width: 240px;
+    background-image: url("../assets/images/dco-logo.svg");
+    justify-self: flex-start;
+    margin: 8vw 0px 8vw 8vw;
+    background-repeat: no-repeat;
+    
+}
+
+@media only screen and (max-width: 780px) {
+    #nav {
+        display: flex;
+        margin: 0px;
+        flex-direction: row;
+        justify-self: end;
+    }
+
+    #nav, .navtext {
+        display: none;
+    }
+
+    .landing-text {
+        display: flex;
+        font-size: 1.25rem;
+        justify-self: center;
+        margin: 0vw 8vw 4vw;
+    }
+
+    .logo {
+        display: flex;
+        height: 25px;
+        min-width: 225px;
+        background-image: url("../assets/images/dco-logo.svg");
+        justify-self: flex-start;
+        margin: 6vw 0px 6vw 6vw;
+        background-repeat: no-repeat;
+    
+    }
+    .nav-menu {
+        display: flex;
+        height: 17px;
+        width: 40px;
+        background-image: url("../assets/images/nav-menu.svg");
+        margin: 6vw 6vw 6vw 0vw;
+        background-repeat: no-repeat;
+        justify-self: flex-end;
+        align-self: center;
+    }
+
+    .Landing {
+        border-bottom: 1px solid black;
+        margin-bottom: 4vw;
+    }
+
+    
+
+    .banner {
+        background-image: url("../assets/images/frontiers-banner.svg");
+        background-size: 100%;
+        padding: 12em;
+        background-repeat: no-repeat;
+        margin: 4vw 0px;
+    }
+    
+    
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .banner {
+        margin: 4vw 0px;
+        background-image: url(../assets/images/mobile-banner.svg);
+        padding: 8em;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .banner-topleft {
+        padding: 13vw 24vw;
+    }
+
+    .banner-topright {
+        padding: 13vw;
+        transform: translateX(-16.5vw);
+    }
+
+    .banner-bottomleft {
+        padding: 13vw 10vw;
+    }
+
+    .banner-bottomcenter {
+        padding: 0;
+    }
+
+    .banner-bottomright {
+        padding: 13vw 27vw;
+    }
+
+    .landing-text {
+        display: flex;
+        font-size: 1rem;
+        justify-self: center;
+        margin: 4vw 8vw 0px;
+    }
+
+    .logo {
+        display: flex;
+        height: 20px;
+        min-width: 150px;
+        background-image: url("../assets/images/dco-logo.svg");
+        justify-self: flex-start;
+        margin: 6vw 0px 6vw 6vw;
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+    }
+
+    .button {
+        display: flex;
+        height: 60px;
+        width: 190px;
+        margin: 4vw auto 8vw;
+        background-color: black;
+    }
+
+    .long-text {
+        display: none;
+    }
+    
+    .short-text {
+        position: absolute;
+        font-size: 8vw;
+        width: 15vw;
+        color: white;
+        left: 8vw;
+        top: 14vw;
+        
+    }
 }
