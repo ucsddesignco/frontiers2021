@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-const Toggle = props => {
+const Toggle = (props) => {
   const [toggled, setToggled] = useState(false);
 
   function openWindow() {
-    let defaultUrl = "https://forms.gle/CSqLiC4tHKe7oskt6"; 
+    let defaultUrl = "https://forms.gle/CSqLiC4tHKe7oskt6";
 
     if (props.href) {
       document.getElementById(props.href).scrollIntoView(true);
@@ -36,13 +36,15 @@ const Toggle = props => {
 
   return (
     <div className="toggle">
-      <input 
-        id={props.id} 
-        type="checkbox" 
-        onClick={() => { newLink(props.id) }}
+      <input
+        id={props.id}
+        type="checkbox"
+        onClick={() => {
+          newLink(props.id);
+        }}
       ></input>
       <span class="text-label">
-        {toggled ? " " : (props.text || "Register Now")}
+        {toggled ? " " : props.text || "Register Now"}
       </span>
     </div>
   );
