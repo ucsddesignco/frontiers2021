@@ -279,6 +279,69 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .timeline-invisible {
+    font-family: "Inter";
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #141414;
+    margin: 0 8vw 2rem 8vw;
+    display: block;
+  }
+
+  .timeline-invisible-last {
+    font-family: "Inter";
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #141414;
+    margin: 0 8vw 5rem 8vw;
+    display: block;
+  }
+
+  .timeline-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.25rem;
+  }
+
+  .white-scrim {
+    color: #141414;
+    font-size: 2rem;
+    line-height: 1.25;
+    margin: 3.5rem 8vw;
+    font-family: "Neue Plak";
+  }
+
+  .gr-circles {
+    width: auto;
+    height: 6rem;
+    margin-left: 8vw;
+    margin-right: 1.5rem;
+  }
+
+  .timeline-title {
+    font-family: "Neue Plak";
+    font-size: 1.25rem;
+  }
+
+  .timeline-p {
+    font-family: "Inter";
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #141414;
+    display: none;
+  }
+  .timeline-invisible {
+    font-size: 1rem;
+  }
+
+  .timeline-invisible-last {
+    font-size: 1rem;
+  }
+}
+
 /********* BRIEF ********/
 .brief-container {
   background-color: #141414;
@@ -318,7 +381,7 @@ body {
   line-height: 1.5;
 }
 
-/**** Timeline Media Query ***/
+/**** Brief Media Query ***/
 @media (max-width: 992px) {
   .brief-title {
     font-family: "Neue Plak";
