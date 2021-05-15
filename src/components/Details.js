@@ -25,8 +25,9 @@ function Details() {
                 target="_blank"
               >
                 {" "}
-                Design Co’s Discord channel.
+                Design Co’s Discord channel
               </a>
+              .
             </p>
           </Grid>
           <Grid item sm={12} md={6} className="details-info">
