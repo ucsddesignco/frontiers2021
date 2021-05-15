@@ -30,7 +30,7 @@ function Timeline() {
           <img src={gr2} className="gr-circles" alt="number-1" />
           <div class="timeline-details">
             <h2 class="timeline-title">
-              Submissions Close | Sunday, May 23 at 11:59pm
+              Submissions Close | Wednesday, May 26 at 11:59pm
             </h2>
             <p class="timeline-p">
               Teams will put their finishing touches on their prototypes and
