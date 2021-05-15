@@ -218,6 +218,18 @@ a:hover {
   width: 80%;
 }
 
+.discord-link {
+  color: #fff;
+  font-family: "Inter";
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.discord-link:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
 /**** Details Media Query ***/
 @media (max-width: 768px) {
   .details-container {

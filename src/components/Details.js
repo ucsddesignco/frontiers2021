@@ -18,8 +18,15 @@ function Details() {
             <h2>How big can my team be?</h2>
             <p>
               Teams can be a min of 2 and a max of 4. Teams will not be
-              assigned, so feel free to make your own or join one on Design Co’s
-              Discord channel.
+              assigned, so feel free to make your own or join one on{" "}
+              <a
+                className="discord-link"
+                href="https://discord.gg/ZZEp4WNWK3"
+                target="_blank"
+              >
+                {" "}
+                Design Co’s Discord channel.
+              </a>
             </p>
           </Grid>
           <Grid item sm={12} md={6} className="details-info">
