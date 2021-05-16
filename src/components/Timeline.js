@@ -33,14 +33,14 @@ function Timeline() {
               Submissions Close | Wednesday, May 26 at 11:59pm
             </h2>
             <p class="timeline-p">
-              Teams will put their finishing touches on their prototypes and
-              submit a 1-minute video presentation of their designs.
+              Teams will put their finishing touches on their prototypes and submit a 
+              1-page overview of their design solution.
             </p>
           </div>
         </div>
         <p class="timeline-invisible">
-          Teams will put their finishing touches on their prototypes and submit
-          a 1-minute video presentation of their designs.
+          Teams will put their finishing touches on their prototypes and submit a 
+          1-page overview of their design solution.
         </p>
         <div className="timeline-item">
           <img src={gr3} className="gr-circles" alt="number-1" />
@@ -49,14 +49,14 @@ function Timeline() {
               Judging, Feedback, Final Presentations | Thursday, May 27
             </h2>
             <p class="timeline-p">
-              Fjord will review each team's presentation and cast their votes
-              for the top 3 teams. The winning teams will receive prizes!
+              Fjord will review each team's live presentation and cast their votes for 
+              the top 3 teams. The winning teams will receive prizes!
             </p>
           </div>
         </div>
         <p class="timeline-invisible-last">
-          Fjord will review each team's presentation and cast their votes for
-          the top 3 teams. The winning teams will receive prizes!
+          Fjord will review each team's live presentation and cast their votes for the top 3 
+          teams. The winning teams will receive prizes!
         </p>
         <ToggleTimeline />
       </div>
