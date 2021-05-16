@@ -33,7 +33,7 @@ function Details() {
           <Grid item sm={12} md={6} className="details-info">
             <h2>How long is Design Frontiers?</h2>
             <p>
-              Design Frontiers is 4 days long and will be held on May 20 - May
+              Design Frontiers will be held from May 20 - May
               26, 2021.
             </p>
           </Grid>
