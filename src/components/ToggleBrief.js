@@ -44,7 +44,7 @@ const Toggle = (props) => {
         }}
       ></input>
       <span class="text-label-brief">
-        {toggled ? " " : props.text || "Register Now"}
+        {toggled ? " " : props.text || "Read More"}
       </span>
     </div>
   );
