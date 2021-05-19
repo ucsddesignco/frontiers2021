@@ -112,7 +112,9 @@ a:hover {
   height: calc(100% - 70px - 6vw);
   padding: 10vw 0;
   box-sizing: border-box;
-  background: url(assets/images/nav-banner.png), no-repeat fixed center;
+  background: url(assets/images/nav-banner.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -469,7 +471,6 @@ a:hover {
 .brief-container-right {
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
@@ -497,8 +498,23 @@ a:hover {
   margin-top: -1rem;
 }
 
+.read-me-btn {
+  background: url("assets/images/read-more-btn.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  transform: scale(0.8);
+  margin-top: 1rem;
+  margin-left: -5rem;
+}
+
 /**** Brief Media Query ***/
 @media (max-width: 992px) {
+  .read-me-btn {
+    transform: scale(0.8);
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
   .brief-title {
     font-family: "Neue Plak";
     font-size: 3rem;
@@ -515,6 +531,11 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .read-me-btn {
+    transform: scale(0.8);
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
   .brief-title {
     font-family: "Neue Plak";
     font-size: 2rem;
@@ -549,7 +570,7 @@ a:hover {
   }
 }
 
-@media (max-width: 480) {
+@media (max-width: 480px) {
   .brief-container {
     height: 700px;
   }
@@ -647,7 +668,9 @@ input[type="checkbox"] {
 }
 
 input:checked[type="checkbox"] {
-  background: url(assets/images/gr-slider.svg), no-repeat fixed center;
+  background: url(assets/images/gr-slider.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 input[type="checkbox"]:before {
@@ -658,7 +681,9 @@ input[type="checkbox"]:before {
   border-radius: 20px;
   top: 0;
   left: 0;
-  background: url(assets/images/arrow-notch.svg), no-repeat fixed center;
+  background: url(assets/images/arrow-notch.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   transform: scale(1);
   transition: 0.5s;
 }
@@ -699,7 +724,9 @@ input:checked[type="checkbox"]:before {
 }
 
 .toggle-dark input:checked[type="checkbox"] {
-  background: url(assets/images/gr-slider-dark.svg), no-repeat fixed center;
+  background: url(assets/images/gr-slider-dark.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .toggle-dark input[type="checkbox"]:before {
@@ -710,7 +737,9 @@ input:checked[type="checkbox"]:before {
   border-radius: 20px;
   top: 0;
   left: 0;
-  background: url(assets/images/arrow-notch-dark.svg), no-repeat fixed center;
+  background: url(assets/images/arrow-notch-dark.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   transform: scale(1);
   transition: 0.5s;
 }
@@ -751,7 +780,9 @@ input:checked[type="checkbox"]:before {
 }
 
 .brief-toggle input:checked[type="checkbox"] {
-  background: url(assets/images/gr-slider.svg), no-repeat fixed center;
+  background: url(assets/images/gr-slider.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .brief-toggle input[type="checkbox"]:before {
@@ -762,7 +793,9 @@ input:checked[type="checkbox"]:before {
   border-radius: 20px;
   top: 0;
   left: 0;
-  background: url(assets/images/arrow-notch.svg), no-repeat fixed center;
+  background: url(assets/images/arrow-notch.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   transform: scale(1);
   transition: 0.5s;
 }

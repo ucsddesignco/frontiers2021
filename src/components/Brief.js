@@ -19,10 +19,13 @@ function Brief() {
           </video>
           <div className="brief-paragraph-container">
             <p className="brief-paragraph">
-              We've been brewing some cool design briefs for Design Frontiers,
-              and we can't wait to reveal it at our kickoff event! Until then,
-              we wish you the best of luck in finding a team!
+              Fill in these blanks in the following sentence: <br />
+              Relating to social impact, how might we make _____________
+              resources more accessible to ____________?
             </p>
+            <a href="https://www.google.com">
+              <div className="read-me-btn"></div>
+            </a>
             {/* <BriefToggle /> */}
           </div>
         </div>
