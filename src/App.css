@@ -739,7 +739,7 @@ input:checked[type="checkbox"]:before {
   margin-bottom: 2rem;
   position: absolute;
   align-self: center;
-  margin-left: 14vw;
+  margin-left: 8vw;
   margin-top: 13rem;
 }
 
@@ -786,7 +786,6 @@ input:checked[type="checkbox"]:before {
 
 @media (max-width: 480px) {
   .toggle-brief {
-    margin-left: 14vw;
-    margin-top: 18rem;
+    margin-left: 8vw;
   }
 }
