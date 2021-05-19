@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import GradientLoop from "../assets/images/gr-compressed.mp4";
 import Love from "../assets/images/heart.svg";
 import DesignCo from "../assets/images/dco-logo.svg";
-import BriefToggle from "./BriefToggle";
+import ToggleBrief from "./ToggleBrief";
 
 function Brief() {
   const briefRef = useRef();
@@ -17,17 +17,12 @@ function Brief() {
           <video autoPlay loop muted playsInline className="gradient-loop">
             <source src={GradientLoop} type="video/mp4" />
           </video>
-          <div className="brief-paragraph-container">
-            <p className="brief-paragraph">
-              Fill in these blanks in the following sentence: <br />
-              Relating to social impact, how might we make _____________
-              resources more accessible to ____________?
-            </p>
-            <a href="https://www.google.com">
-              <div className="read-me-btn"></div>
-            </a>
-            {/* <BriefToggle /> */}
-          </div>
+          <p className="brief-paragraph">
+            Fill in these blanks in the following sentence: <br />
+            Relating to social impact, how might we make _____________ resources
+            more accessible to ____________?
+          </p>
+          <ToggleBrief></ToggleBrief>
         </div>
       </div>
 
