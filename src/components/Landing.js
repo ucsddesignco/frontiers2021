@@ -13,7 +13,8 @@ function Landing() {
         <div className="top-container">
           <img className="top-banner" src={TopBanner2} alt="hello" />
           <img className="bottom-banner" src={BottomBanner} alt="hello" />
-          <p className="top-text">Design Frontiers &nbsp;
+          <p className="top-text">
+            Design Frontiers &nbsp;
             <span id="year">2021</span>
           </p>
         </div>
