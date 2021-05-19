@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import GradientLoop from "../assets/images/gr-compressed.mp4";
 import Love from "../assets/images/heart.svg";
 import DesignCo from "../assets/images/dco-logo.svg";
+import ToggleBrief from "./ToggleBrief"
 
 function Brief() {
   const briefRef = useRef();
@@ -17,11 +18,14 @@ function Brief() {
             <source src={GradientLoop} type="video/mp4" />
           </video>
           <p className="brief-paragraph">
-            We've been brewing some cool design briefs for Design Frontiers, and
-            we can't wait to reveal it at our kickoff event! Until then, we wish
-            you the best of luck in finding a team!
+          Fill in these blanks in the following sentence: <br/>
+          Relating to social impact, how might we make _____________ resources more accessible to ____________?
           </p>
+          <ToggleBrief></ToggleBrief>
+          
         </div>
+
+        
       </div>
 
       <div className="footer">

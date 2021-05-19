@@ -492,6 +492,9 @@ a:hover {
 
 /**** Brief Media Query ***/
 @media (max-width: 992px) {
+  .brief-container {
+    height: 380px;
+  }
   .brief-title {
     font-family: "Neue Plak";
     font-size: 3rem;
@@ -510,6 +513,9 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .brief-container {
+    min-height: 380px;
+  }
   .brief-title {
     font-family: "Neue Plak";
     font-size: 2rem;
@@ -545,6 +551,21 @@ a:hover {
     top: 0;
     margin: 5rem 8vw 0 8vw;
     line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .brief-container {
+    height: 500px;
+  }
+
+  .toggle-brief input {
+    transform: scale(0.8);
+    margin-left: -1.5rem;
+  }
+
+  .text-label-brief {
+    margin-left: 4.25rem !important;
   }
 }
 
@@ -697,4 +718,66 @@ input:checked[type="checkbox"]:before {
 
 .toggle-dark input:checked[type="checkbox"]:before {
   left: 220px;
+}
+
+/********* Brief Toggle ********/
+.toggle-brief {
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: absolute;
+  align-self: center;
+  margin-left: 14vw;
+  margin-top: 13rem;
+}
+
+.text-label-brief {
+  position: absolute;
+  color: white;
+  font-size: 0.9rem;
+  margin-left: 6rem;
+}
+
+.toggle-brief input[type="checkbox"] {
+  position: relative;
+  width: 220px;
+  height: 77px;
+  -webkit-appearance: none;
+  background: #141414;
+  outline: none;
+  border-radius: 100px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  cursor: url(assets/images/cursor.svg), auto;
+}
+
+.toggle-brief input:checked[type="checkbox"] {
+  background: url(assets/images/gr-rectangle-small.svg), no-repeat fixed center;
+}
+
+.toggle-brief input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  width: 77px;
+  height: 77px;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  background: url(assets/images/arrow-notch-small.svg), no-repeat fixed center;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.toggle-brief input:checked[type="checkbox"]:before {
+  left: 142px;
+}
+
+@media (max-width: 480px) {
+  .toggle-brief {
+    
+    margin-left: 14vw;
+    margin-top: 18rem;
+  }
 }
