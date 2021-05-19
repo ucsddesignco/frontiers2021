@@ -787,5 +787,8 @@ input:checked[type="checkbox"]:before {
 @media (max-width: 480px) {
   .toggle-brief {
     margin-left: 8vw;
+    margin-top: 0px;
+    margin-bottom: 6rem;
+    align-self: flex-end;
   }
 }
