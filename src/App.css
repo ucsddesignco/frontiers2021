@@ -113,7 +113,9 @@ a:hover {
   height: calc(100% - 70px - 6vw);
   padding: 10vw 0;
   box-sizing: border-box;
-  background: url(assets/images/nav-banner.png), no-repeat fixed center;
+  background: url(assets/images/nav-banner.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -470,7 +472,6 @@ a:hover {
 .brief-container-right {
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
 }
@@ -649,7 +650,9 @@ input[type="checkbox"] {
 }
 
 input:checked[type="checkbox"] {
-  background: url(assets/images/gr-slider.svg), no-repeat fixed center;
+  background: url(assets/images/gr-slider.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 input[type="checkbox"]:before {
@@ -660,7 +663,9 @@ input[type="checkbox"]:before {
   border-radius: 20px;
   top: 0;
   left: 0;
-  background: url(assets/images/arrow-notch.svg), no-repeat fixed center;
+  background: url(assets/images/arrow-notch.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   transform: scale(1);
   transition: 0.5s;
 }
@@ -701,7 +706,9 @@ input:checked[type="checkbox"]:before {
 }
 
 .toggle-dark input:checked[type="checkbox"] {
-  background: url(assets/images/gr-slider-dark.svg), no-repeat fixed center;
+  background: url(assets/images/gr-slider-dark.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .toggle-dark input[type="checkbox"]:before {
@@ -712,7 +719,9 @@ input:checked[type="checkbox"]:before {
   border-radius: 20px;
   top: 0;
   left: 0;
-  background: url(assets/images/arrow-notch-dark.svg), no-repeat fixed center;
+  background: url(assets/images/arrow-notch-dark.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   transform: scale(1);
   transition: 0.5s;
 }
@@ -777,7 +786,6 @@ input:checked[type="checkbox"]:before {
 
 @media (max-width: 480px) {
   .toggle-brief {
-    
     margin-left: 14vw;
     margin-top: 18rem;
   }
