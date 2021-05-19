@@ -472,6 +472,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: auto;
 }
 
 .gradient-loop {
@@ -480,14 +481,20 @@ a:hover {
   object-fit: cover;
 }
 
+.brief-paragraph-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  margin: 6rem 8vw 0 8vw;
+}
+
 .brief-paragraph {
   font-size: 1.5rem;
   font-family: "Inter";
   color: #141414;
-  position: absolute;
-  top: 0;
-  margin: 6rem 8vw 0 8vw;
   line-height: 1.5;
+  margin-top: -1rem;
 }
 
 /**** Brief Media Query ***/
@@ -505,9 +512,7 @@ a:hover {
     font-size: 1.25rem;
     font-family: "Inter";
     color: #141414;
-    position: absolute;
-    top: 0;
-    margin: 5rem 8vw 0 8vw;
+    margin: -1rem 8vw 0 8vw;
     line-height: 1.5;
   }
 }
@@ -520,22 +525,39 @@ a:hover {
     font-family: "Neue Plak";
     font-size: 2rem;
     color: #fff;
-    margin: 4rem 8vw;
+    margin: 3rem 8vw;
   }
   .brief-paragraph {
     font-size: 1rem;
     font-family: "Inter";
     color: #141414;
-    position: absolute;
-    top: 0;
-    margin: 5rem 8vw 0 8vw;
+    margin: -2rem 8vw 0 8vw;
     line-height: 1.5;
   }
 }
 
 @media (max-width: 600px) {
   .brief-container {
-    height: 380px;
+    height: 600px;
+  }
+  .brief-title {
+    font-family: "Neue Plak";
+    font-size: 2rem;
+    color: #fff;
+    margin: 5rem 8vw;
+  }
+  .brief-paragraph {
+    font-size: 1rem;
+    font-family: "Inter";
+    color: #141414;
+    margin: 0rem 8vw 0 8vw;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480) {
+  .brief-container {
+    height: 700px;
   }
   .brief-title {
     font-family: "Neue Plak";
@@ -547,8 +569,6 @@ a:hover {
     font-size: 1rem;
     font-family: "Inter";
     color: #141414;
-    position: absolute;
-    top: 0;
     margin: 5rem 8vw 0 8vw;
     line-height: 1.5;
   }
